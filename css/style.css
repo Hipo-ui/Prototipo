@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+/*---------------------------- HTML ----------------------------*/
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  scroll-behavior: smooth;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--neuter-color-y1);
+}
+
+.container {
+  max-width: 80%;
+}
+
+.height-space {
+  min-height: 25rem;
+}
+
+/*---------------------------- Colors ----------------------------*/
+:root {
+  --primary-color: hsl(158, 97%, 23%);
+  --primary-color-opacity: hsl(158, 97%, 23%, 0.1);
+
+  --accent-color-1-y3-opacity: hsl(11, 96%, 48%, 0.25);
+  --accent-color-1: hsl(11, 96%, 48%);
+  --accent-color-1-x2: hsl(11, 96%, 39%);
+
+  --accent-color-2: hsl(203, 96%, 43%);
+  --accent-color-2-opacity: hsl(203, 96%, 43%, 0.25);
+
+  --accent-color-3: hsl(146, 96%, 28%);
+  --accent-color-3-opacity: hsl(146, 96%, 28%, 0.25);
+
+  --neuter-color-y1: hsl(34, 6%, 22%);
+  --neuter-color-y2: hsl(36, 3%, 31%);
+  --neuter-color-y3: hsl(36, 2%, 39%);
+  --neuter-color-y3-opacity: hsl(36, 2%, 39%, 0.25);
+  --neuter-color-y3-opacity-2: hsl(36, 2%, 39%, 0.09);
+  --neuter-color: hsl(34, 10%, 14%);
+
+  --white-color: hsl(0, 0%, 100%);
+}
+
+/*---------------------------- NavBar ----------------------------*/
+.navbar-expand-lg- {
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--white-color);
+  font-weight: 400;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-item {
+  color: var(--neuter-color);
+}
+
+.dropdown-item:hover {
+  background-color: var(--accent-color-1);
+  color: var(--white-color);
+}
+
+/*---------------------------- Texts ----------------------------*/
+label {
+  color: var(--neuter-color-y2);
+}
+
+.text-principal {
+  color: var(--white-color);
+}
+
+.text-head {
+  color: var(--neuter-color-y1);
+}
+
+.text-tittle {
+  color: var(--neuter-color);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.text-description {
+  color: var(--neuter-color-y3);
+}
+
+.text-body {
+  color: var(--neuter-color-y1);
+}
+
+.text-tag {
+  color: var(--accent-color-2);
+}
+
+.text-label {
+  color: var(--neuter-color-y2);
+  font-weight: bold;
+}
+
+.text-data {
+  color: var(--neuter-color-y2);
+}
+
+.text-user {
+  color: var(--white-color);
+  font-weight: 400;
+}
+
+.bread-link {
+  text-decoration: none;
+}
+
+.text-small{
+  color: var(--neuter-color-y3);
+}
+
+.invalid-feedback {
+  color: hsl(354, 79%, 32%);
+}
+
+/*---------------------------- Pill ----------------------------*/
+.bg-pill {
+  background-color: var(--accent-color-2-opacity);
+  border-radius: 0.25rem;
+}
+
+/*---------------------------- Cards ----------------------------*/
+.list-group-item {
+  border: none;
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+.rounded-card {
+  /*border-radius: 0.5rem;*/
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/*---------------------------- Hr ----------------------------*/
+.hr-color {
+  color: var(--primary-color);
+  opacity: 0.5;
+  width: 60%;
+  margin: auto;
+}
+
+/*---------------------------- SVG Banner ----------------------------*/
+.background-svg {
+  /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 150' preserveAspectRatio='none' style='height: 100%25; width: 100%25;'%3E%3Cpath d='M-2.54,151.47 C132.34,-24.17 251.41,274.83 499.72,74.50 L502.54,-5.42 L-4.79,-4.44 Z' style='stroke: none; fill: %2302734A;'%3E%3C/path%3E%3C/svg%3E");*/
+  background-image: url(../img/banner.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position-y: 100%;
+  height: 30rem;
+}
+
+.img-fluid {
+  max-height: 70%;
+}
+
+/*---------------------------- Buttons Solid ----------------------------*/
+/*Naranja*/
+.btn-solid-accent-1 {
+  background-color: var(--accent-color-1);
+  border-color: var(--accent-color-1);
+  color: var(--white-color);
+  transition: transform 250ms ease-in-out;
+}
+
+.btn-solid-accent-1:hover {
+  background-color: var(--accent-color-1-x2);
+  border-color: var(--accent-color-1-x2);
+  color: var(--white-color);
+}
+
+.btn-solid-accent-1:focus {
+  outline: 0px;
+  box-shadow: 0 0 0 0.25rem var(--accent-color-1-y3-opacity);
+}
+
+.btn-solid-accent-1:active {
+  transform: scale(0.9);
+}
+
+/*---------------------------- Buttons Outline ----------------------------*/
+/*Naranja*/
+.btn-out-accent-1 {
+  background-color: var(--white-color);
+  border-color: var(--accent-color-1);
+  color: var(--accent-color-1);
+  transition: transform 250ms ease-in-out;
+}
+
+.btn-out-accent-1:hover {
+  background-color: var(--accent-color-1);
+  border-color: var(--accent-color-1);
+  color: var(--white-color);
+}
+
+.btn-out-accent-1:focus {
+  outline: 0px;
+  box-shadow: 0 0 0 0.25rem var(--accent-color-1-y3-opacity);
+}
+
+.btn-out-accent-1:active {
+  transform: scale(0.9);
+}
+
+/*Gris*/
+.btn-out-neuter {
+  background-color: var(--white-color);
+  border-color: var(--neuter-color-y3);
+  color: var(--neuter-color-y3);
+  transition: transform 250ms ease-in-out;
+}
+
+.btn-out-neuter:hover {
+  background-color: var(--neuter-color-y3);
+  border-color: var(--neuter-color-y3);
+  color: var(--white-color);
+}
+
+.btn-out-neuter:focus {
+  outline: 0px;
+  box-shadow: 0 0 0 0.25rem var(--neuter-color-y3-opacity);
+}
+
+.btn-out-neuter:active {
+  transform: scale(0.9);
+}
+
+/*---------------------------- Button Modal Close ----------------------------*/
+.btn-close:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--neuter-color-y3-opacity);
+}
+
+/*---------------------------- Background´s ----------------------------*/
+.background-primary {
+  background-color: var(--primary-color);
+}
+
+/*---------------------------- Forms Buttons ----------------------------*/
+.form-select {
+  /*border-radius: 0.95rem;*/
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
+}
+.form-control {
+  /*border-radius: 0.95rem;*/
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
+}
+
+.btn {
+  /*border-radius: 0.95rem;*/
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
+}
+
+/*---------------------------- Forms ----------------------------*/
+/*custom-select*/
+.custom-select:focus {
+  border-color: var(--accent-color-3);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--accent-color-3-opacity);
+}
+
+.form-select,
+.custom-select {
+  border: 1px solid var(--accent-color-3);
+}
+
+.form-select {
+  color: var(--neuter-color-y3);
+}
+
+.form-select:focus {
+  border-color: var(--accent-color-3);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--accent-color-3-opacity);
+}
+
+/*textarea*/
+textarea {
+  resize: none;
+}
+
+/*inputs form-control*/
+.form-control:focus {
+  color: var(--neuter-color);
+  border-color: var(--accent-color-3);
+  box-shadow: 0 0 0 0.25rem var(--accent-color-3-opacity);
+}
+
+.form-control {
+  border-color: var(--accent-color-3);
+}
+
+/*form ivalid feedback*/
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  border-color: hsl(354, 76%, 54%);
+}
+
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus {
+  border-color: hsl(354, 76%, 54%);
+  box-shadow: 0 0 0 0.25rem hsl(354, 76%, 54%, 0.25);
+}
+
+/*---------------------------- Table DataTable ----------------------------*/
+.table-height-space {
+  min-height: 35rem;
+}
+
+/*Buttons filter, search*/
+#example_filter,
+#example_length {
+  padding-top: 0.5rem;
+}
+
+.table-width {
+  width: 100%;
+}
+
+/*---------------------------- DataTable ----------------------------*/
+.page-item.active .page-link {
+  z-index: 3;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+
+.page-link:hover {
+  z-index: 2;
+  color: var(--white-color);
+  text-decoration: none;
+  background-color: var(--neuter-color-y3);
+  border-color: var(--neuter-color-y3);
+}
+
+/*---------------------------- Login ----------------------------*/
+.form-signin {
+  width: 100%;
+  max-width: 20rem;
+  margin: auto;
+}
+
+/*---------------------------- Img Responsive ----------------------------*/
+@media screen and (max-width: 950px) {
+  .img-responsive {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .img-responsive-banner {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+/*---------------------------- Acordion ----------------------------*/
+.accordion-button {
+  color: var(--neuter-color);
+}
+
+.accordion {
+  margin-bottom: -1px;
+  /*border-radius: 0.5rem;*/
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.accordion-button:focus {
+  border-color: var(--accent-color-3);
+  outline: 0;
+  box-shadow: 0 0 0 0;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--neuter-color-y3-opacity-2);
+  box-shadow: 0 0 0 0;
+  font-weight: 600;
+  color: var(--accent-color-3);
+}
+
+/*---------------------------- Alert ----------------------------*/
+.alert-danger {
+  background-color: hsl(354, 76%, 54%, 0.1);
+  border-color: hsl(354, 76%, 54%);
+  color: hsl(354, 79%, 32%);
+}
+
+/************************** C U S T O M ********************************/
+/*Effect hover navbar*/
+.borderFade {
+  padding-bottom: 1px;
+  color: hsl(222, 25%, 14%);
+  position: relative;
+}
+
+.borderFade::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translateY(3px);
+  background: hsl(0, 0%, 100%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.borderFade:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/**********************************************************/
+/*size card book in home*/
+.size-box {
+  width: 20rem;
+}
+
+/**********************************************************/
+/*height for row in login*/
+.height-login {
+  height: 30rem;
+}
+
+/*show password*/
+.eye-position i {
+  cursor: pointer;
+}
+
+.input-group-text {
+  background-color: var(--white-color);
+  border-color: var(--accent-color-3);
+}
+
+.form-password {
+  border-right: none;
+}
+
+.input-group-text{
+  border-left: none;
+}
+
+/*Show Password*/
+.field-icon {
+  float: right;  
+  margin-right:2em;
+  margin-top: -1.85em;
+  position: relative;
+  z-index: 2;
+}
+
+.show-password{
+  cursor: pointer;
+}
+
+.show-password:hover{
+  color: var(--accent-color-2);
+}
+
+/*Hover card in home*/
+.card-book:hover{
+  border-color: var(--accent-color-3);
+}
+
+.img-book:hover{
+  transition: transform 250ms ease-in-out;
+  transform: scale(1.07);
+}

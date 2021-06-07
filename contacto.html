@@ -1,0 +1,136 @@
+<!--<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Formulario">
+    <title>Formulario de contacto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <!-- Favicons -->
+    <link rel="icon" href="./img/logo-icon.svg" sizes="32x32" type="image/png">
+    <!-- Custom styles for this template -->
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/validation.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-sm navbar-dark background-primary py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg" width="180" height="40" alt="Logotipo">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#" class="bread-link">
+                        <i class="bi bi-house-door"></i> Inicio
+                    </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">contacto</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container mt-1">
+        <div class="row d-flex justify-content-center mb-4">
+            <form class="col-md-5 needs-validation" action="" autocomplete="off" novalidate>
+                <div>
+                    <p class="display-6 text-center text-head">Formulario de contacto</p>
+                    <p class="small">Acompleta los campos que se te presentan.</p>
+                </div>
+
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Escribe tu correo</label>
+                    <input type="email" class="form-control" id="correo" name="correo" value="" minlength="1"
+                        maxlength="80" autofocus required>
+                    <div class="valid-feedback">
+                        ¡Correcto!
+                    </div>
+                    <div class="invalid-feedback">
+                        ¡Dato incorrecto!
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="asunto" class="form-label">Escribe tu asunto</label>
+                    <input type="text" class="form-control" id="asunto" name="asunto" value="" minlength="1"
+                        maxlength="80" required>
+                    <div class="valid-feedback">
+                        ¡Correcto!
+                    </div>
+                    <div class="invalid-feedback">
+                        ¡Dato incorrecto!
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Escribe tu mensaje</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="6" minlength="1" maxlength="1500"
+                        required></textarea>
+                    <div class="valid-feedback">
+                        ¡Correcto!
+                    </div>
+                    <div class="invalid-feedback">
+                        ¡Dato incorrecto!
+                    </div>
+                </div>
+
+
+
+
+                <div class="row mt-4 mb-1">
+                    <div class="col-md-6 d-grid gap-2 mx-auto mb-md-0 mb-3">
+                        <button class="btn btn-solid-accent-1" type="submit">Envía mi mensaje</button>
+                    </div>
+                    <div class="col-md-6 d-grid gap-2 mx-auto">
+                        <a href="#" class="btn  btn-out-neuter">Cancela este envío</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <!-- ================================================== -->
+    <script src="./js/validation.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })();      
+    </script>
+</body>
+
+</html>

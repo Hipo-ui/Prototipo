@@ -1,0 +1,179 @@
+<!--<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Panel del Administrador">
+    <title>Panel del Administrador</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Favicons -->
+    <link rel="icon" href="./img/logo-icon.svg" sizes="32x32" type="image/png">
+    <!-- Custom styles for this template -->
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark background-primary py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg" width="180" height="40" alt="Logotipo" loading="lazy">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-">
+                <ul class="navbar-nav mb-2 mb-sm-0 ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-bs-toggle="dropdown">
+                            <span class="d-none d-md-inline text-user">María Magdalena Mendoza Díaz</span>
+                            <img src="./img/profile.svg" alt="perfil" width="35" height="35" loading="lazy">
+                            <span class="d-md-none d-inline text-user">María Magdalena Mendoza Díaz</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow">
+                            <li>
+                                <a class="dropdown-item" href="#">Mis datos</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Cambio de contraseña</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Cierra sesión</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container text-center pb-3">
+
+        <div class="mt-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active">
+                        <i class="bi bi-speedometer2"></i> Panel
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- Alumno -->
+        <section class="animate__animated animate__fadeIn">
+
+            <header>
+                <h1 class="display-6">Bienvenido a tu panel</h1>
+                <hr class="hr-color">
+            </header>
+
+            <!-- Fila 1-->
+            <div class="row d-flex justify-content-center mt-4">
+
+                <div class="card card-book shadow-sm size-box mx-3 my-3">
+                    <div>
+                        <img src="./img/book.svg" alt="imagen" width="200" height="200" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <p class="text-tittle">Administra los libros</p>
+                        <p class="text-description">Paragraph of text beneath the heading to explain the heading. Tust
+                            keep going until we run out of words.</p>
+                        <a href="#" class="btn btn-out-accent-1 d-block">
+                            Llévame <i class="bi bi-arrow-right-circle"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card card-book shadow-sm size-box mx-3 my-3">
+                    <div>
+                        <img src="./img/student.svg" alt="imagen" width="200" height="200" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <p class="text-tittle">Administra a los alumnos</p>
+                        <p class="text-description">Paragraph of text beneath the heading to explain the heading. Tust
+                            keep going until we run out of words.</p>
+                        <a href="#" class="btn btn-out-accent-1 d-block">
+                            Llévame <i class="bi bi-arrow-right-circle"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card card-book shadow-sm size-box mx-3 my-3">
+                    <div>
+                        <img src="./img/revisor.svg" alt="imagen" width="200" height="200" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <p class="text-tittle">Administra los revisores</p>
+                        <p class="text-description">Paragraph of text beneath the heading to explain the heading. Tust
+                            keep going until we run out of words.</p>
+                        <a href="#" class="btn btn-out-accent-1 d-block">
+                            Llévame <i class="bi bi-arrow-right-circle"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card card-book shadow-sm size-box mx-3 my-3">
+                    <div>
+                        <img src="./img/date.svg" alt="imagen" width="200" height="200" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <p class="text-tittle">Administra las fechas</p>
+                        <p class="text-description">Paragraph of text beneath the heading to explain the heading. Tust
+                            keep going until we run out of words.</p>
+                        <a href="#" class="btn btn-out-accent-1 d-block">
+                            Llévame <i class="bi bi-arrow-right-circle"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card card-book shadow-sm size-box mx-3 my-3">
+                    <div>
+                        <img src="./img/check-suggest.svg" alt="imagen" width="200" height="200" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <p class="text-tittle">Administra los libros sugeridos</p>
+                        <p class="text-description">Paragraph of text beneath the heading to explain the heading. Tust
+                            keep going until we run out of words.</p>
+                        <a href="#" class="btn btn-out-accent-1 d-block">
+                            Llévame <i class="bi bi-arrow-right-circle"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card card-book shadow-sm size-box mx-3 my-3">
+                    <div>
+                        <img src="./img/data-report.svg" alt="imagen" width="200" height="200" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <p class="text-tittle">Genera informes</p>
+                        <p class="text-description">Paragraph of text beneath the heading to explain the heading. Tust
+                            keep going until we run out of words.</p>
+                        <a href="#" class="btn btn-out-accent-1 d-block">
+                            Llévame <i class="bi bi-arrow-right-circle"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <!-- ================================================== -->
+</body>
+
+</html>

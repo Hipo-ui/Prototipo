@@ -1,0 +1,108 @@
+<!--<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>-->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Preguntas frecuentes">
+    <title>Preguntas frecuentes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <!-- Favicons -->
+    <link rel="icon" href="./img/logo-icon.svg" sizes="32x32" type="image/png">
+    <!-- Custom styles for this template -->
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-sm navbar-dark background-primary py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg" width="180" height="40" alt="Logotipo">
+            </a>            
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#" class="bread-link">
+                        <i class="bi bi-house-door"></i> Inicio
+                    </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Preguntas frecuentes</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container mt-1 height-space">
+        <div class="row d-flex justify-content-center mb-4">
+            <div class="col-md-8">
+                <div>
+                    <p class="display-6 text-center text-head">Preguntas frecuentes</p>                    
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <p>¿Puedo extender mi reporte a más de cuatro cuartillas?</p>                                
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate necessitatibus blanditiis unde totam nobis!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <p>¿Qué puedo hacer si no puedo cargar mi reporte?</p>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis esse laborum officia perspiciatis voluptate totam non sequi? Culpa eaque eum nam quis cupiditate consequatur harum?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <p>¿Cuántos errores de ortografía como máximo puedo tener en mi reporte?</p>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem hic, veritatis obcaecati ab minus deserunt eius in aut quis sint.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <!-- ================================================== -->    
+</body>
+
+</html>
